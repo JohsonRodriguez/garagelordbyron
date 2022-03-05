@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: byron-parking
+  cloud:
+    config:
+      uri: ${CONFIG_URI}
+      fail-fast: true
+      label: main
+      enabled: ${CONFIG_ENABLED:false}
